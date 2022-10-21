@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../imagenes/images.png">
+    <link rel="stylesheet" href="../estilos/css/estilos.css">
+</head>
+<body id="top">
+    <header>
+        <nav class="navbar container">
+            <a class="navbar__link" href="../index.html">
+                <img src="../imagenes/civilist.jpg" alt="Civilist logo de la empresa">
+            </a>
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class ="menu__link" href="./proyectos.html">Proyectos</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#top">Contacto</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="./propuesta_infirmativa.html">Propuesta Informativa</a>
+                </li>
+            </ul>
+        </nav>
+    </header>        
+    <hr>
+    <main class="container">
+            <h1>Completa el formulario para que podamos comunicarnos contigo!</h1>
+        <form action="#" method="get" enctype="text/plain" >
+            <div>
+                <label for="name"> Nombre y Apellido </label>
+                <input type="text" name="name" id="name" required placeholder="Introduzca su Nombre">
+            </div>
+            <div>
+                <label for="age"> Edad </label>
+                <input type="number" name="age" id="age" min="1" max="150" step="1" placeholder="Ej. 18">
+            </div>
+            <div>
+                <label for="date" > Fecha de Nacimiento </label>
+                <input type="date" name="date" id="date" min="2021-01-01">
+            </div>
+            <div>
+                <label for="gender"> Genero </label>
+                <select name="gender" id="gender">
+                    <option value="male" label="Masculino"></option>
+                    <option value="female" label="Femenino"></option>
+                </select>
+            </div>
+            <div>
+                <label for="email"> Email </label>
+                <input type="text" name="email" id="email" required placeholder="Introduzca su Email">
+            </div>
+            <div>
+                <label for="phone"> Telefono </label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <input type="reset" value="Reiniciar Formulario"></input>
+            <input type="submit" value="Enviar Formulario"></input>
+        </form>   
+    </main>
+    <hr>
+    <footer>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia inventore dolore provident ipsum omnis id temporibus culpa officia, fuga voluptatem libero exercitationem</h3>
+        <nav>
+            <div>
+                <span>Instagram</span>
+            </div>
+            <div>
+                <li><a href="">LINK</a></li>
+            </div>
+            <div>
+                <span>Facebook</span>
+            </div>
+            <div>
+                <li><a href="">LINK</a></li>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>

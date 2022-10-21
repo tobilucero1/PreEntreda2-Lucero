@@ -1,0 +1,154 @@
+/*IMPORTS*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@500&family=Open+Sans:wght@300;500&display=swap');
+
+/* VARIABLES */
+:root{
+    /* Palettes */
+    --primary: #FCF7FF;
+    --secondary: #000000;
+    --accent: #f7f5e7;
+    --ligth: #934439;
+
+    /* Font sizes*/
+    --text-xxl: 4.8em ;
+    --text-xl: 3.6em;
+    --text-lg: 3.2em;
+    --text-md: 2.2em;
+    --text-sm: 1.6em;
+    --text-xs: 1.2em;
+
+    /* Spacing*/
+
+    --sp-xxl: 12rem ;
+    --sp-xl: 8rem;
+    --sp-lg: 5rem;
+    --sp-md: 3.2rem;
+    --sp-sm: 1.6rem;
+    --sp-xs: 0.8rem;
+
+}
+
+
+
+/* NORMALIZE */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 62.5% ;
+}
+
+
+body{
+    font-family:'Merriweather', serif ;
+    font-size: var(--text-sm);
+    color: var(--secondary);
+}
+
+
+a{
+    display: inline-block;
+    font-size: var(--text-md);
+    color: var(--secondary);
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+header{
+    font-family: 'Merriweather', serif;
+    font-size: smaller;
+    text-align: center;
+    list-style-type: none;
+    }
+
+
+ul{
+    list-style-type: none;
+    color: var(--secondary);
+}
+
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.navbar .navbar__link{
+    max-width: 180px;
+    min-width: 180px;
+}
+
+
+.navbar .menu{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    
+}
+
+
+.menu .menu__link{
+    padding: 1rem;
+    transition: all 3s ease-in-out;
+}
+
+
+.menu .menu__item:hover{
+    background-color: var(--accent);
+    padding: var(--sp-xs);
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar__menu{
+        justify-content: center;
+    }
+}
+
+
+/* HEADER */
+
+header{
+    padding: var(--sp-sm);
+}
+
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+
+}
+
+li {
+    display: inline;
+}
+
+
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+footer{
+    
+    font-size: xx-small;
+    font-family: 'Open Sans', sans-serif;
+}
