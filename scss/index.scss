@@ -1,0 +1,107 @@
+/*IMPORTS*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@500&family=Open+Sans:wght@300;500&display=swap');
+
+
+
+
+
+
+
+
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    font-family:'Merriweather', serif ;
+    font-size: var(--text-sm);
+    color: var(--secondary);
+
+
+    header{
+        font-family: 'Merriweather', serif;
+        font-size: smaller;
+        text-align: center;
+        list-style-type: none;
+        padding: var(--sp-sm);
+    
+        ul{
+            list-style-type: none;
+            color: var(--secondary);
+        }
+    
+        li {
+            display: inline;
+
+            a{
+                display: inline-block;
+                font-size: var(--text-md);
+                color: var(--secondary);
+                list-style-type: none;
+                text-decoration: none;
+            }
+        }
+        
+    
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+    
+            .navbar__link{
+                max-width: 180px;
+                min-width: 180px;
+            }
+    
+            .menu{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                flex-wrap: wrap;
+    
+    
+                .menu__link{
+                    padding: 1rem;
+                    transition: all 3s ease-in-out;
+                }
+    
+                .menu__item:hover{
+                    background-color: var(--accent);
+                    padding: var(--sp-xs);
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            align-items: center;
+        }
+        .navbar__menu{
+            justify-content: center;
+        }
+    }
+
+    .container{
+        max-width: 1200px;
+        margin:0 auto;
+    }
+
+
+    p{
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    
+    footer{
+        
+        font-size: xx-small;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+}
+
+
+
+
